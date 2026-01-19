@@ -108,3 +108,60 @@ Apesar da inserção automática de ponto e vírgula poder ajudar a mitigar erro
 Em projetos colaborativos ou de grande escala, a consistência no estilo de codificação e a clareza do código são cruciais, e o uso explícito de ponto e vírgula contribui para um código mais legível e menos sujeito a erros de interpretação por parte dos programadores e do próprio mecanismo de ASI.
 
 - [Leitura complementar da documentação sobre o JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion)
+
+# Para saber mais: operadores lógicos
+
+Quando escrevemos programas em JavaScript, frequentemente nos deparamos com a necessidade de tomar decisões com base em condições. É aqui que os operadores lógicos entram em cena e nos ajudam a criar uma lógica robusta e eficaz.
+A seguir, vamos explorar os operadores lógicos de uma forma simples e fácil de entender. Teremos exemplos claros para ilustrar seu funcionamento.
+
+## `AND (&&)``
+
+O operador AND, representado pelos símbolos "&&", é utilizado para combinar duas condições e avaliar se ambas são verdadeiras. Se ambas as condições forem verdadeiras, o resultado será… verdadeiro. Caso contrário, logicamente será falso. Por exemplo:
+
+```javascript
+let idade = 25;
+let possuiCarteira = true;
+
+// se idade é maior que 18 e possui carteira…
+if (idade > 18 && possuiCarteira) {
+  console.log("Pode dirigir!");
+} else {
+  console.log("Não pode dirigir.");
+}
+```
+
+## `OR (||)``
+
+O operador OR, representado pelos símbolos "||", é usado para verificar se pelo menos uma das condições é verdadeira. Se uma das condições for verdadeira, o resultado será verdadeiro. Se ambas forem falsas, o resultado será falso. Veja um exemplo:
+
+```javascript
+let temMaça = false;
+let temBanana = true;
+
+// se tem maça ou tem banana…
+if (temMaça || temBanana) {
+  console.log("Você tem frutas!");
+} else {
+  console.log("Não tem frutas.");
+}
+```
+
+### Outros tipos de operadores lógicos
+
+| Operador | Nome | Exemplo | Resultado Esperado |
+| :--- | :--- | :--- | :--- |
+| `==` | Igual | `A == B` | Verdadeiro se **A for igual** a B |
+| `===` | Estritamente Igual | `A === B` | Verdadeiro se valor e tipo forem iguais |
+| `!=` | Diferente | `A != B` | Verdadeiro se **A não for igual** a B |
+| `<` | Menor que | `A < B` | Verdadeiro se **A for menor que** B |
+| `>` | Maior que | `A > B` | Verdadeiro se **A for maior que** B |
+| `<=` | Menor ou igual | `A <= B` | Verdadeiro se **A for menor ou igual** a B |
+| `>=` | Maior ou igual | `A >= B` | Verdadeiro se **A for maior ou igual** a B |
+
+#### *Operadores lógicos*
+
+| Operador | Nome | Exemplo | Resultado Esperado |
+| :--- | :--- | :--- | :--- |
+| `&&` | E / AND | `(A > B) && (B == C)` | Verdadeiro se A for maior que B **E** B for igual a C |
+| `||` | OU / OR | `(A > B) || (B == C)` | Verdadeiro se A for maior que B **OU** B for igual a C |
+| `!` | NEGAÇÃO | `!(A == B)` | Verdadeiro se A **NÃO** for igual a B |
