@@ -31,3 +31,71 @@ Além disso, essas habilidades são altamente valorizadas no mercado de trabalho
 
 ## Para saber mais: funções com JavaScript
 As funções desempenham um papel central na programação e no desenvolvimento de software, permitindo encapsular blocos de código reutilizáveis e executáveis. Elas podem ser definidas para executar tarefas específicas, desde cálculos simples até manipulação complexa de dados. As funções em JavaScript podem ter ou não parâmetros, bem como retornar ou não valores.
+
+## Para saber mais: vamos lwe mais sobre listas?
+Uma array no JavaScript é uma estrutura de dados que permite armazenar e organizar vários valores em uma única variável. Os valores em uma array podem ser de qualquer tipo de dado, como números, strings, objetos, outras arrays e assim por diante. As arrays em JavaScript são indexadas, o que significa que cada valor dentro dela é associado a um índice numérico, começando geralmente do índice 0.
+
+### Criando uma array
+Você pode criar uma array em JavaScript declarando uma variável e atribuindo-lhe valores entre colchetes `[]`.
+
+```javascript
+let frutas = ["Maçã", "Uva", "Laranja"];
+```
+
+### Acessando os valores
+Os elementos de uma array são acessados usando índices numéricos, que começam em 0.
+
+| id | quantidade | preco | total |
+| :--- | :--- | :--- | :--- |
+| 0 | 15 | 93.0 | 1395.0 |
+| 1 | 12 | 102.0 | 1224.0 |
+| 2 | 1 | 18.0 | 18.0 |
+| 3 | 15 | 41.0 | 615.0 |
+| 4 | 2 | 122.0 | 244.0 |
+| 5 | 11 | 14.0 | 154.0 |
+| 6 | 2 | 71.0 | 142.0 |
+| 7 | 12 | 48.0 | 576.0 |
+| 8 | 2 | 14.0 | 28.0 |
+| 9 | 4 | 144.0 | 576.0 |
+
+```javascript
+console.log(frutas[0]); // Saída: "Maçã"
+console.log(frutas[2]); // Saída: "Laranja"
+```
+
+### Adicionando novos elementos
+Para adicionar um elemento ao final da array, você pode usar o método `push`.
+
+```javascript
+frutas.push("Morango");
+console.log(frutas); // Saída: ["Maçã", "Uva", "Laranja", "Morango"]
+```
+
+### Removendo o último elemento
+Para remover o último elemento, você pode usar o método `pop`.
+
+```javascript
+frutas.pop();
+console.log(frutas); // Saída: ["Maçã", "Uva", "Laranja"]
+```
+
+### Quais linguagens de programação usam arrays?
+
+Aqui está uma lista de algumas linguagens de programação que utilizam arrays:
+
+- JavaScript
+- Python
+- Java
+- C++
+- C#
+- Ruby
+- PHP
+- Swift
+- Kotlin
+- Go
+
+Outras linguagens também suportam o uso de arrays ou estruturas de dados semelhantes para armazenar coleções de valores. Aprender sobre arrays é importante porque elas desempenham um papel fundamental no desenvolvimento de aplicações de software.
+
+As listas ou Arrays fornecem uma maneira eficiente de armazenar e acessar conjuntos de dados, permitindo que os programadores organizem informações de forma lógica e manipulem esses dados de maneira eficaz.
+
+Tendo o conhecimento de como trabalhar com arrays, é possível criar algoritmos mais poderosos, resolver problemas de programação de forma mais eficiente e criar aplicações mais dinâmicas e interativas.
