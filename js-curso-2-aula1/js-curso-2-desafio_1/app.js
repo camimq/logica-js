@@ -26,3 +26,61 @@ function botaoSoma(){
 
   alert(`O resultado da soma dos números ${num1} + ${num2} = ` + soma)
 }
+
+// 6. Criar uma função que exibe "Olá, mundo!" no console.
+function olaMundo(){
+  console.log('Olá Mundo!');
+}
+olaMundo();
+
+// 7. Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+function olaNome(nome){
+//  console.log('Olá, ' + nome + ' !');
+  console.log(`Olá, ${nome}!`)
+}
+olaNome('Camila');
+
+// 8. Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+let dobroDoNumero = dobraNumero(5);
+function dobraNumero(num){
+  return console.log(num * 2)
+}
+
+// let dobroDoNumero = dobraNumero(5);
+
+// 9. Criar uma função que recebe três números como parâmetros e retorna a média deles.
+function calculaMedia(num1, num2, num3){
+  media = (num1 + num2 + num3) / 3;
+  return console.log(media);
+}
+
+calculaMedia(2,2,2);
+
+// 10. Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+function maiorNumero(numero1, numero2){
+  if (numero1 > numero2){
+    return console.log(`Entre ${numero1} e ${numero2}, o ${numero1}, é maior`);
+  }
+  else{
+    return console.log(`Entre ${numero1} e ${numero2}, o ${numero2}, é maior`);
+  }
+}
+
+maiorNumero(35,10)
+
+/* 
+Alternativamente, é possível substituir o if-else acima, por uma mais simples, usando o operador ternário.
+
+function maiorNumero(numero1, numero2){
+  return a > b ? a : b;
+}
+
+Para ler o operador ternário corretamente: A é maior que B? Se sim, retorne / exiba A. Se não, retorne / exiba B.
+*/
+
+// 11. Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+function calculoMultiplicacao(numero){
+  return console.log(numero * numero);
+}
+
+calculoMultiplicacao(2);
